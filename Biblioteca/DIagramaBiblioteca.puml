@@ -1,0 +1,42 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class biblioteca.Actualizar_Producto
+class biblioteca.Admin
+class biblioteca.ConexionDDBB
+class biblioteca.Consulta_Productos
+class biblioteca.Inicio
+class biblioteca.Prestamo_Libro
+class biblioteca.Registrar_Producto
+class biblioteca.VentanaUser
+class biblioteca.usuario
+class java.sql.Connection
+class java.sql.DriverManager
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.sql.Statement
+class java.time.LocalDate
+class javax.swing.JFrame
+class javax.swing.JOptionPane
+biblioteca.Actualizar_Producto ..> java.lang.SuppressWarnings
+biblioteca.Actualizar_Producto --|> javax.swing.JFrame
+biblioteca.Admin ..> java.lang.SuppressWarnings
+biblioteca.Admin --|> javax.swing.JFrame
+biblioteca.ConexionDDBB ..> java.sql.Connection
+biblioteca.ConexionDDBB ..> java.sql.DriverManager
+biblioteca.ConexionDDBB ..> java.sql.ResultSet
+biblioteca.ConexionDDBB ..> java.sql.SQLException
+biblioteca.ConexionDDBB ..> java.sql.Statement
+biblioteca.ConexionDDBB ..> javax.swing.JOptionPane
+biblioteca.Consulta_Productos ..> java.lang.SuppressWarnings
+biblioteca.Consulta_Productos --|> javax.swing.JFrame
+biblioteca.Inicio ..> java.lang.SuppressWarnings
+biblioteca.Inicio --|> javax.swing.JFrame
+biblioteca.Inicio ..> javax.swing.JOptionPane
+biblioteca.Prestamo_Libro ..> java.lang.SuppressWarnings
+biblioteca.Prestamo_Libro ..> java.time.LocalDate
+biblioteca.Prestamo_Libro --|> javax.swing.JFrame
+biblioteca.Registrar_Producto ..> java.lang.SuppressWarnings
+biblioteca.Registrar_Producto --|> javax.swing.JFrame
+biblioteca.VentanaUser ..> java.lang.SuppressWarnings
+biblioteca.VentanaUser --|> javax.swing.JFrame
+@enduml
